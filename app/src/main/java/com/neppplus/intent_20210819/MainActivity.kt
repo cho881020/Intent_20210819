@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 //            그 번호로 전화 연결
 
 //            1. 어디로 전화 걸지 정보 (Uri) 완성
-            val myUri = Uri.parse("tel:01051123237")
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
 //            2. 완성된 정보로 전화 거는 Intent
             val myIntent = Intent( Intent.ACTION_DIAL, myUri )
 //            3. 실제로 Intent 실행
