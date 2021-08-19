@@ -51,9 +51,41 @@
             android:layout_weight="1" />
 
         <Button
+            android:id="@+id/editNicknameBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="닉네임 변경" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연락처"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="010-5112-3237"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/editNicknameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="폰번 변경" />
 
     </LinearLayout>
 
