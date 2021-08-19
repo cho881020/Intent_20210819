@@ -22,7 +22,7 @@ class EditNicknameActivity : AppCompatActivity() {
             resultIntent.putExtra("nick", inputNickname)
 
 //            OK를 눌렀다고 명시 + 돌아갈 데이터 세팅
-            setResult( Activity.RESULT_OK, resultIntent )
+            setResult( Activity.RESULT_OK , resultIntent )
 
             finish()
 
