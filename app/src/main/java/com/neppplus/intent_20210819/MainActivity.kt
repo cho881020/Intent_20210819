@@ -16,6 +16,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        smsBtn.setOnClickListener {
+            val phoneNum = phoneNumEdt.text.toString()
+
+            val myUri = Uri.parse("smsto:${phoneNum}")
+            val myIntent = Intent( Intent.ACTION_SENDTO, myUri )
+            myIntent.putExtra("sms_body", "자동으로 입력할 내용")
+            startActivity(myIntent)
+        }
+
+
         callBtn.setOnClickListener {
 
             val phoneNum = phoneNumEdt.text.toString()
