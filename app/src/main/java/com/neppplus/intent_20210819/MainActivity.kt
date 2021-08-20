@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        naverBtn.setOnClickListener {
+            val myUri = Uri.parse("https://naver.com")
+            val myIntent = Intent( Intent.ACTION_VIEW, myUri )
+            startActivity(myIntent)
+        }
 
         smsBtn.setOnClickListener {
             val phoneNum = phoneNumEdt.text.toString()
